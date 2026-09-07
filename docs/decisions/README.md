@@ -15,3 +15,4 @@ including their context and consequences.
 |---|---|---|---|
 | [`ADR-001`](ADR-001-python-qt-project-foundation.md) | Python and Qt project foundation | `Accepted` | `2026-09-07` |
 | [`ADR-002`](ADR-002-source-access-boundaries.md) | Source access boundaries | `Accepted` | `2026-09-07` |
+| [`ADR-003`](ADR-003-exiftool-metadata-backend.md) | ExifTool metadata backend | `Accepted` | `2026-09-07` |
