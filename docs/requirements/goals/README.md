@@ -5,4 +5,4 @@ Create one file per product goal from `PRD-template.md`. Name concrete files
 
 | Goal | Title | Status | Priority |
 |---|---|---|---|
-| `<PRD-ID>` | `<TITLE>` | `<STATUS>` | `<PRIORITY>` |
+| [`PRD-IMPORT-001`](PRD-IMPORT-001-organized-photo-import.md) | Organized photo import | `Draft` | `Must` |
