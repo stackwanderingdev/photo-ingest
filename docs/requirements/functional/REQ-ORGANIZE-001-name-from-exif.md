@@ -8,8 +8,10 @@
 ## Behavior
 
 When a photo is imported, the system must derive the destination filename
-`YYYYMMDD_HHMMSS.ext` from its EXIF capture date and time while preserving a
-normalized form of the source filename extension.
+`YYYYMMDD_HHMMSS.ext` from the local date and time of the capture timestamp
+selected under `REQ-METADATA-001`, while preserving a normalized form of the
+source filename extension. It must not convert the selected timestamp to the
+executing system's timezone.
 
 ## Acceptance examples
 
@@ -21,7 +23,10 @@ Then its destination filename equals the name derived from those values
 
 ## Edge and error cases
 
-- The authoritative EXIF field, timezone interpretation, extension normalization, missing metadata, collisions, and malformed metadata remain `UNKNOWN` pending Q-003 and Q-005.
+- Missing or invalid capture time and blocking capture-time conflicts produce no
+  final filename and block import and deletion release under `INV-SAFETY-001`.
+- Extension normalization and filename collisions remain `UNKNOWN` pending
+  `Q-005`.
 
 ## Verification
 
@@ -31,3 +36,5 @@ Then its destination filename equals the name derived from those values
 ## Change history
 
 - `2026-09-07`: Initial Draft derived from the stated project goal.
+- `2026-09-07`: Linked naming to the accepted normalized capture-time rules;
+  collision and extension rules remain open.

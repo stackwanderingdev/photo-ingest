@@ -24,7 +24,11 @@ And no source or destination file is created, changed, moved, or deleted
 
 ## Edge and error cases
 
-- Missing EXIF data, duplicate destinations, inaccessible sources, unsupported files, and scan errors must be visible in the preview; exact classifications remain `UNKNOWN` pending Q-003 and Q-005.
+- Missing or invalid capture time and blocking capture-time conflicts must be
+  visible as blocking per-file outcomes without a final destination path.
+- Duplicate destinations, inaccessible sources, unsupported files, and scan
+  errors must be visible in the preview; their exact classifications remain
+  `UNKNOWN` pending `Q-005`.
 
 ## Verification
 
@@ -34,3 +38,4 @@ And no source or destination file is created, changed, moved, or deleted
 ## Change history
 
 - `2026-09-07`: Initial Draft created for the agreed non-mutating first increment.
+- `2026-09-07`: Defined preview behavior for unresolved capture times.

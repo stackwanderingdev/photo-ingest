@@ -18,6 +18,7 @@ title after the identifier, for example `REQ-AUTH-001-sign-in.md`.
 | [`REQ-PREVIEW-001`](functional/REQ-PREVIEW-001-preview-import.md) | Preview an import without changing files | `Draft` | `Must` | `PRD-IMPORT-001` |
 | [`REQ-FORMAT-001`](functional/REQ-FORMAT-001-supported-original-formats.md) | Support the initial original photo formats | `Accepted` | `Must` | `PRD-IMPORT-001` |
 | [`REQ-SAFETY-001`](functional/REQ-SAFETY-001-protect-associated-media.md) | Protect associated media from silent loss | `Accepted` | `Must` | `PRD-IMPORT-001` |
+| [`REQ-METADATA-001`](functional/REQ-METADATA-001-resolve-capture-time.md) | Resolve the authoritative capture time | `Accepted` | `Must` | `PRD-IMPORT-001` |
 | [`REQ-ORGANIZE-001`](functional/REQ-ORGANIZE-001-name-from-exif.md) | Name imported photos from EXIF data | `Draft` | `Must` | `PRD-IMPORT-001` |
 | [`REQ-ORGANIZE-002`](functional/REQ-ORGANIZE-002-file-from-exif.md) | File imported photos from EXIF data | `Draft` | `Must` | `PRD-IMPORT-001` |
 

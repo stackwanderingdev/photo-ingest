@@ -55,13 +55,14 @@ append goal definitions to this overview.
 |---|---|---|---|---|
 | `Q-001` | Which interface should the first increment provide (CLI, desktop GUI, or another interface)? | Daniel | 2026-09-07 | `Resolved: graphical desktop application` |
 | `Q-002` | Which connected-device access methods must be supported initially? | Daniel | 2026-09-07 | `Resolved: filesystem, MTP, and network paths; selectable subdirectories` |
-| `Q-003` | What exact EXIF fields, filename pattern, directory pattern, timezone handling, and fallback behavior are required? | Product owner | Before requirement acceptance | `Open` |
+| `Q-003` | What exact EXIF fields, filename pattern, directory pattern, timezone handling, and fallback behavior are required? | Daniel | 2026-09-07 | `Partly resolved: capture-time priority, timezone, validity, and fallback rules accepted in REQ-METADATA-001 and ADR-004; the exact HEIC/HEIF container mapping and extension normalization remain open` |
 | `Q-004` | Should import copy or move source files, and what verification is required before any source deletion? | Daniel | Before requirement acceptance | `Partly resolved: delete source after verification; verification definition remains open` |
-| `Q-005` | How should duplicates, filename collisions, missing or malformed EXIF data, unsupported files, and interrupted imports be handled? | Product owner | Before requirement acceptance | `Open` |
-| `Q-006` | Which language/toolchain, project license, and initial version apply? | Daniel | 2026-09-07 | `Resolved: accepted foundation recorded in ADR-001; metadata library remains open pending format scope` |
+| `Q-005` | How should duplicates, filename collisions, missing or malformed EXIF data, unsupported files, and interrupted imports be handled? | Daniel | Before requirement acceptance | `Partly resolved: missing, invalid, and conflicting capture times block final paths, import, and deletion; duplicates, collisions, unsupported files, and interruption remain open` |
+| `Q-006` | Which language/toolchain, project license, and initial version apply? | Daniel | 2026-09-07 | `Resolved: accepted foundation recorded in ADR-001; the metadata backend is recorded separately in ADR-003` |
 | `Q-007` | Which photo formats are initially supported, including HEIC/HEIF behavior, and which metadata solution satisfies that scope? | Daniel | 2026-09-07 | `Resolved: JPEG, HEIC/HEIF, and DNG with ExifTool per ADR-003` |
 | `Q-009` | Which minimum ExifTool version is required? | Daniel | Before stack-profile acceptance | `Open; determine from required tags, JSON behavior, and representative fixtures` |
 | `Q-008` | How are network and MTP sources integrated? | Daniel | 2026-09-07 | `Resolved by ADR-002: mounted network paths use filesystem access; MTP remains distinct and its technology requires a feasibility comparison` |
+| `Q-010` | Beyond syntactic and calendar validity, which concrete plausibility limits apply to capture times, especially dates far in the future? | Daniel | Before REQ-METADATA-001 is used by an implementation task | `Open; no unspecified limit may be applied` |
 
 ## Acceptance framework
 

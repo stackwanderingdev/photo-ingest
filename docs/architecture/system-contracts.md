@@ -7,7 +7,7 @@ separate file under `invariants/` using `invariants/INV-template.md`.
 
 | Invariant | Title | Status | Scope |
 |---|---|---|---|
-| `<INV-ID>` | `<TITLE>` | `<STATUS>` | `<SCOPE>` |
+| [`INV-SAFETY-001`](invariants/INV-SAFETY-001-unresolved-capture-time-blocks-transfer.md) | Unresolved capture time blocks transfer | `Accepted` | Destination planning, import, and deletion eligibility |
 
 Do not define invariants in this index. Use filenames such as
 `INV-DATA-001-no-partial-write.md`.

@@ -8,7 +8,9 @@
 ## Behavior
 
 When a photo is imported, the system must place it below a user-configurable
-destination root in the EXIF-derived directory structure `YYYY/MM/`.
+destination root in the directory structure `YYYY/MM/`, using the local year and
+month of the capture timestamp selected under `REQ-METADATA-001`. It must not
+convert the selected timestamp to the executing system's timezone.
 
 ## Acceptance examples
 
@@ -20,7 +22,11 @@ Then it is stored at the directory path derived from those values
 
 ## Edge and error cases
 
-- The authoritative EXIF field, timezone interpretation, missing metadata, invalid path values, and directory-creation behavior remain `UNKNOWN` pending Q-003 and Q-005.
+- Missing or invalid capture time and blocking capture-time conflicts produce no
+  final directory path and block import and deletion release under
+  `INV-SAFETY-001`.
+- Invalid destination-root values and directory-creation behavior remain
+  `UNKNOWN` pending `Q-005`.
 
 ## Verification
 
@@ -30,3 +36,5 @@ Then it is stored at the directory path derived from those values
 ## Change history
 
 - `2026-09-07`: Initial Draft derived from the stated project goal.
+- `2026-09-07`: Linked filing to the accepted normalized capture-time rules;
+  destination-path operational rules remain open.
