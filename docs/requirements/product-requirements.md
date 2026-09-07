@@ -59,7 +59,7 @@ append goal definitions to this overview.
 | `Q-004` | Should import copy or move source files, and what verification is required before any source deletion? | Daniel | Before requirement acceptance | `Partly resolved: delete source after verification; verification definition remains open` |
 | `Q-005` | How should duplicates, filename collisions, missing or malformed EXIF data, unsupported files, and interrupted imports be handled? | Product owner | Before requirement acceptance | `Open` |
 | `Q-006` | Which language/toolchain, project license, and initial version apply? | Daniel | 2026-09-07 | `Resolved: accepted foundation recorded in ADR-001; metadata library remains open pending format scope` |
-| `Q-007` | Which photo formats are supported, including HEIC/HEIF behavior, and which metadata library satisfies that scope? | Daniel | Before first task readiness | `Open` |
+| `Q-007` | Which photo formats are initially supported, including HEIC/HEIF behavior, and which metadata solution satisfies that scope? | Daniel | Before first task readiness | `Partly resolved: JPEG, HEIC/HEIF, and DNG are required; metadata solution remains open` |
 | `Q-008` | How are network and MTP sources integrated? | Daniel | 2026-09-07 | `Resolved by ADR-002: mounted network paths use filesystem access; MTP remains distinct and its technology requires a feasibility comparison` |
 
 ## Acceptance framework

@@ -15,6 +15,9 @@ local photo library.
 
 - Select a source and a contained subdirectory.
 - Preview photo destinations without changing source or destination files.
+- Support JPEG, HEIC/HEIF, and DNG as the first required original formats.
+- Preserve supported originals without automatic conversion or extraction from multi-image HEIF containers.
+- Detect known associated media without silently deleting an unsupported companion.
 - Derive destination paths in the form `[configured root]/YYYY/MM/YYYYMMDD_HHMMSS.ext` from photo metadata.
 - Transfer and verify photos before deleting their source files.
 - Support local and mounted network filesystems through filesystem access.
