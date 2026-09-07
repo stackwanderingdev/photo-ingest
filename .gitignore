@@ -1,0 +1,45 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# General build and test artifacts
+build/
+dist/
+coverage/
+.coverage
+.cache/
+tmp/
+temp/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# JavaScript/TypeScript
+node_modules/
+.npm/
+.pnpm-store/
+
+# .NET
+bin/
+obj/
+
+# Java/Kotlin
+.gradle/
+target/

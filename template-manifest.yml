@@ -1,0 +1,68 @@
+schema_version: 1
+
+template:
+  name: software-project-template
+  version: 1.0.0
+  status: stable
+  language: en
+  license: MIT
+  source: https://github.com/stackwanderingdev/software-development-template.git
+
+derived_project:
+  name: <PROJECT_NAME>
+  version: <PROJECT_VERSION>
+  license: <SPDX_IDENTIFIER>
+  initialized_at: <YYYY-MM-DD>
+  initialized_by: <NAME_OR_AUTOMATION>
+
+artifacts:
+  product_requirements:
+    path: docs/requirements/product-requirements.md
+    purpose: Product problem, target users, goals, non-goals, scope, and requirement entry points.
+    authority: normative
+  functional_requirements:
+    path: docs/requirements/functional-requirements.md
+    entity_directory: docs/requirements/functional
+    purpose: Functional requirement index and individually referenceable REQ artifacts.
+    authority: normative
+  non_functional_requirements:
+    path: docs/requirements/non-functional-requirements.md
+    entity_directory: docs/requirements/quality
+    purpose: Quality requirement index and individually referenceable NFR artifacts.
+    authority: normative
+  ux:
+    path: docs/ux/ux-guidelines.md
+    entity_directory: docs/ux/journeys
+    purpose: UX rules, accessibility constraints, interaction guidance, and user journeys.
+    authority: status-dependent
+  architecture:
+    path: docs/architecture/architecture.md
+    purpose: System boundaries, building blocks, responsibilities, and architecture overview.
+    authority: normative
+  system_contracts:
+    path: docs/architecture/system-contracts.md
+    entity_directory: docs/architecture/invariants
+    purpose: System contracts and individually referenceable invariant artifacts.
+    authority: normative
+  dependency_rules:
+    path: docs/architecture/dependency-rules.md
+    purpose: Concrete dependency constraints between architectural areas.
+    authority: normative
+  decisions:
+    path: docs/decisions
+    template: docs/decisions/ADR-template.md
+    purpose: Accepted architectural and technical decisions recorded as ADR artifacts.
+    authority: accepted-records
+  engineering:
+    path: docs/engineering
+    purpose: Stack profile, coding rules, verification expectations, and Definition of Done.
+    authority: normative
+  tasks:
+    path: docs/tasks
+    template: docs/tasks/TASK-template.md
+    purpose: Scoped implementation work items constrained by higher-authority artifacts.
+    authority: scoped
+  development_workflow:
+    path: docs/development-workflow.md
+    purpose: Lifecycle, artifact states, traceability, and development process.
+    authority: process

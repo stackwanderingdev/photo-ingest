@@ -1,0 +1,45 @@
+name: Project CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: <RUNNER>
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up the project runtime
+        run: <RUNTIME_SETUP>
+
+      - name: Install locked dependencies
+        run: <INSTALL_COMMAND>
+
+      - name: Validate project documentation
+        run: <PROJECT_VALIDATION_COMMAND>
+
+      - name: Check formatting
+        run: <FORMAT_CHECK_COMMAND>
+
+      - name: Lint
+        run: <LINT_COMMAND>
+
+      - name: Type check
+        run: <TYPE_CHECK_COMMAND>
+
+      - name: Test
+        run: <TEST_COMMAND>
+
+      - name: Check dependencies
+        run: <DEPENDENCY_CHECK_COMMAND>
+
+      - name: Scan for secrets
+        run: <SECRET_SCAN_COMMAND>
+
+      - name: Build
+        run: <BUILD_COMMAND>
