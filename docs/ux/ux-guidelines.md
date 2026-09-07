@@ -5,8 +5,8 @@ interfaces, CLIs, APIs, and other human-system interfaces where relevant.
 
 ## Status and profile
 
-- Status: `Draft`
-- UX effort: `Proposed: Minimal`
+- Status: `Accepted`
+- UX effort: `Minimal`
 - Owner: `Daniel`
 - Last reviewed: `2026-09-07`
 - Interface types: `Desktop`
@@ -114,8 +114,8 @@ equate measurement with user value.
 
 | ID | Rule | User/journey | Evidence | Status |
 |---|---|---|---|---|
-| `UX-PROJ-001` | A preview must state clearly that it will not change source or destination files. | `USR-001` / `UJ-001` | GUI system test and owner walkthrough | `Draft` |
-| `UX-PROJ-002` | Source selection must expose filesystem, MTP, and network locations and allow selecting a contained subdirectory. | `USR-001` / `UJ-001` | Owner walkthrough with representative sources | `Draft` |
+| `UX-PROJ-001` | A preview must state clearly that it will not change source or destination files. | `USR-001` / `UJ-001` | GUI system test and owner walkthrough | `Accepted` |
+| `UX-PROJ-002` | Source selection must expose filesystem, MTP, and network locations and allow selecting a contained subdirectory. | `USR-001` / `UJ-001` | Owner walkthrough with representative sources | `Accepted` |
 
 ## Official foundations
 

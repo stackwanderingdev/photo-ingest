@@ -9,11 +9,11 @@ template:
   source: https://github.com/stackwanderingdev/software-development-template.git
 
 derived_project:
-  name: <PROJECT_NAME>
-  version: <PROJECT_VERSION>
-  license: <SPDX_IDENTIFIER>
-  initialized_at: <YYYY-MM-DD>
-  initialized_by: <NAME_OR_AUTOMATION>
+  name: PhotoIngest
+  version: 0.1.0
+  license: MIT
+  initialized_at: 2026-09-07
+  initialized_by: Daniel and OpenAI Codex
 
 artifacts:
   product_requirements:

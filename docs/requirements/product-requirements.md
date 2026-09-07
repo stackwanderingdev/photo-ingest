@@ -58,7 +58,9 @@ append goal definitions to this overview.
 | `Q-003` | What exact EXIF fields, filename pattern, directory pattern, timezone handling, and fallback behavior are required? | Product owner | Before requirement acceptance | `Open` |
 | `Q-004` | Should import copy or move source files, and what verification is required before any source deletion? | Daniel | Before requirement acceptance | `Partly resolved: delete source after verification; verification definition remains open` |
 | `Q-005` | How should duplicates, filename collisions, missing or malformed EXIF data, unsupported files, and interrupted imports be handled? | Product owner | Before requirement acceptance | `Open` |
-| `Q-006` | Which language/toolchain, project license, and initial version apply? | Daniel | Before bootstrap completion | `Open; recommendations requested` |
+| `Q-006` | Which language/toolchain, project license, and initial version apply? | Daniel | 2026-09-07 | `Resolved: accepted foundation recorded in ADR-001; metadata library remains open pending format scope` |
+| `Q-007` | Which photo formats are supported, including HEIC/HEIF behavior, and which metadata library satisfies that scope? | Daniel | Before first task readiness | `Open` |
+| `Q-008` | Are network and MTP sources accessed only through operating-system mounts, through application-managed connections, or through a hybrid architecture? | Daniel | Before source architecture acceptance | `Open` |
 
 ## Acceptance framework
 

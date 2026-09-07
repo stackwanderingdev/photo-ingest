@@ -13,4 +13,4 @@ including their context and consequences.
 
 | ADR | Title | Status | Date |
 |---|---|---|---|
-| `<ADR-NNN>` | `<TITLE>` | `<STATUS>` | `<YYYY-MM-DD>` |
+| [`ADR-001`](ADR-001-python-qt-project-foundation.md) | Python and Qt project foundation | `Accepted` | `2026-09-07` |

@@ -8,7 +8,7 @@ State why the users and context are sufficiently understood.
 
 ## Research frame
 
-- UX effort: `Proposed: Minimal; approval pending UX profile review`
+- UX effort: `Minimal`
 - Research question: `Can the intended personal user reliably import and organize photos on their Linux system?`
 - Method: `Initial project statement; self-assessment and walkthrough still required`
 - Period: `2026-09-07`
