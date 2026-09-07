@@ -3,12 +3,13 @@
 - Status: `Draft`
 - Priority: `Must`
 - Source/goal: `PRD-IMPORT-001`
-- Affected journey/UX rule: `To be defined after Q-001 and Q-003 are resolved`
+- Affected journey/UX rule: `UJ-001`, `UX-003`, `UX-006`, `UX-007`, `UX-010`
 
 ## Behavior
 
-When a photo is imported, the system must derive its destination filename from
-the photo's EXIF data according to an approved deterministic naming rule.
+When a photo is imported, the system must derive the destination filename
+`YYYYMMDD_HHMMSS.ext` from its EXIF capture date and time while preserving a
+normalized form of the source filename extension.
 
 ## Acceptance examples
 
@@ -20,7 +21,7 @@ Then its destination filename equals the name derived from those values
 
 ## Edge and error cases
 
-- Exact EXIF fields, formatting, timezone, missing metadata, collisions, and malformed metadata remain `UNKNOWN` pending Q-003 and Q-005.
+- The authoritative EXIF field, timezone interpretation, extension normalization, missing metadata, collisions, and malformed metadata remain `UNKNOWN` pending Q-003 and Q-005.
 
 ## Verification
 

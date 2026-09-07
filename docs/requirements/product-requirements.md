@@ -3,7 +3,7 @@
 ## Document status
 
 - Product: `PhotoIngest`
-- Owner: `Project owner (name to be confirmed)`
+- Owner: `Daniel (Product Owner)`
 - Status: `Draft`
 - Last updated: `2026-09-07`
 
@@ -35,32 +35,35 @@ append goal definitions to this overview.
 
 ## Non-goals
 
-- Platforms other than Linux.
+- Support for operating systems other than Linux in the initial product.
 - Editing image content or EXIF metadata.
 - Cloud-hosted photo storage or synchronization unless added by a later approved requirement.
 - General photo-library browsing, cataloging, or image editing unless added by a later approved requirement.
 
 ## Assumptions and constraints
 
-- Assumption: The primary user controls both the attached source device and the local destination library; confirm with the product owner before accepting trust-boundary decisions.
-- Constraint: The supported operating system is Linux.
+- Assumption: The primary user controls both the attached source device and the local destination library; validate during the first workflow walkthrough.
+- Constraint: The initial supported operating system is Linux; future platform support is not prohibited.
+- Constraint: The product provides a graphical desktop interface.
+- Constraint: Sources include filesystem paths, MTP-accessible devices, and network paths, with selection of a contained subdirectory.
+- Constraint: A completed import deletes its source file only after successful destination verification.
 - Constraint: Imported photo naming and destination structure are derived from EXIF data according to rules that still require approval.
 
 ## Open questions
 
 | ID | Question | Owner | Due | Status |
 |---|---|---|---|---|
-| `Q-001` | Which interface should the first increment provide (CLI, desktop GUI, or another interface)? | Product owner | Before architecture acceptance | `Open` |
-| `Q-002` | Which connected-device access methods must be supported initially (for example a mounted filesystem, MTP, or both)? | Product owner | Before architecture acceptance | `Open` |
+| `Q-001` | Which interface should the first increment provide (CLI, desktop GUI, or another interface)? | Daniel | 2026-09-07 | `Resolved: graphical desktop application` |
+| `Q-002` | Which connected-device access methods must be supported initially? | Daniel | 2026-09-07 | `Resolved: filesystem, MTP, and network paths; selectable subdirectories` |
 | `Q-003` | What exact EXIF fields, filename pattern, directory pattern, timezone handling, and fallback behavior are required? | Product owner | Before requirement acceptance | `Open` |
-| `Q-004` | Should import copy or move source files, and what verification is required before any source deletion? | Product owner | Before requirement acceptance | `Open` |
+| `Q-004` | Should import copy or move source files, and what verification is required before any source deletion? | Daniel | Before requirement acceptance | `Partly resolved: delete source after verification; verification definition remains open` |
 | `Q-005` | How should duplicates, filename collisions, missing or malformed EXIF data, unsupported files, and interrupted imports be handled? | Product owner | Before requirement acceptance | `Open` |
-| `Q-006` | Which language/toolchain, project license, initial version, and accountable decision owner(s) apply? | Project owner | Before bootstrap completion | `Open` |
+| `Q-006` | Which language/toolchain, project license, and initial version apply? | Daniel | Before bootstrap completion | `Open; recommendations requested` |
 
 ## Acceptance framework
 
 Describe who accepts product goals, when, and based on which evidence.
 
-The accountable product owner reviews and explicitly accepts product goals and
-functional behavior. The owner assignment is still open; until it is confirmed,
-new normative artifacts remain Draft.
+Daniel holds the Product, UX, Architecture, Security/Risk, and Task Owner roles
+for this personal project. Daniel reviews and explicitly accepts normative
+artifacts and task completion.

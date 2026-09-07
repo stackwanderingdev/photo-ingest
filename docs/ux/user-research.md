@@ -8,11 +8,11 @@ State why the users and context are sufficiently understood.
 
 ## Research frame
 
-- UX effort: `Proposed: Minimal; approval pending Q-001 and Q-006`
+- UX effort: `Proposed: Minimal; approval pending UX profile review`
 - Research question: `Can the intended personal user reliably import and organize photos on their Linux system?`
 - Method: `Initial project statement; self-assessment and walkthrough still required`
 - Period: `2026-09-07`
-- Sample and selection: `One intended personal user; identity and decision ownership to be confirmed`
+- Sample and selection: `Daniel, the intended personal user and decision owner`
 - Limitations/bias: `No observed workflow or representative device and photo set has yet been evaluated.`
 - Consent and privacy: `Not applicable for the initial project statement; no personal research data was collected.`
 
@@ -21,7 +21,7 @@ State why the users and context are sufficiently understood.
 - Goals: Transfer photos from an attached device and obtain a consistently named and structured local library.
 - Tasks: Connect a source device, initiate an import, understand its progress and outcome, and recover from import problems.
 - Context: The user's own Linux system, local photo library, and attached device such as a smartphone.
-- Capabilities and constraints: Exact interface needs and supported device-access methods are not yet known.
+- Capabilities and constraints: Uses a graphical Linux desktop application; sources may be filesystem, MTP, or network paths and require subdirectory selection.
 - Existing tools/workarounds: Manual transfer and organization are inferred from the problem statement and must be confirmed.
 - Frequency: `UNKNOWN`; confirm during the initial walkthrough.
 

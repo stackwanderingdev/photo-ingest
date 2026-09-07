@@ -5,13 +5,13 @@ interfaces, CLIs, APIs, and other human-system interfaces where relevant.
 
 ## Status and profile
 
-- Status: `Draft | Accepted`
-- UX effort: `Minimal | Standard | Extended | Critical`
-- Owner: `<NAME/ROLE>`
-- Last reviewed: `<YYYY-MM-DD>`
-- Interface types: `<WEB | MOBILE | DESKTOP | CLI | API | EMBEDDED | ...>`
-- Primary users: `<REFERENCE TO user-research.md>`
-- Critical journeys: `<UJ-NNN>`
+- Status: `Draft`
+- UX effort: `Proposed: Minimal`
+- Owner: `Daniel`
+- Last reviewed: `2026-09-07`
+- Interface types: `Desktop`
+- Primary users: `USR-001 in user-research.md`
+- Critical journeys: `UJ-001`
 
 ### Effort levels
 
@@ -104,17 +104,18 @@ equate measurement with user value.
 
 | Profile | Additional concerns | Active? |
 |---|---|---|
-| Web | Responsive layout, browser behavior, URL/navigation, WCAG, keyboard | `<YES/NO>` |
-| Mobile | Touch targets, orientation, platform conventions, interruptions | `<YES/NO>` |
-| Desktop | Windows, keyboard, focus, platform integration, scaling | `<YES/NO>` |
-| CLI | Help, examples, exit codes, pipes, non-interactive use | `<YES/NO>` |
-| API | Consistent concepts, discoverability, contracts, errors, examples | `<YES/NO>` |
+| Web | Responsive layout, browser behavior, URL/navigation, WCAG, keyboard | `No` |
+| Mobile | Touch targets, orientation, platform conventions, interruptions | `No` |
+| Desktop | Windows, keyboard, focus, platform integration, scaling | `Yes` |
+| CLI | Help, examples, exit codes, pipes, non-interactive use | `No user-facing CLI planned` |
+| API | Consistent concepts, discoverability, contracts, errors, examples | `No public API planned` |
 
 ## Project-specific UX rules
 
 | ID | Rule | User/journey | Evidence | Status |
 |---|---|---|---|---|
-| `UX-PROJ-001` | `<RULE>` | `<ROLE/UJ-NNN>` | `<TEST/METRIC>` | `Draft` |
+| `UX-PROJ-001` | A preview must state clearly that it will not change source or destination files. | `USR-001` / `UJ-001` | GUI system test and owner walkthrough | `Draft` |
+| `UX-PROJ-002` | Source selection must expose filesystem, MTP, and network locations and allow selecting a contained subdirectory. | `USR-001` / `UJ-001` | Owner walkthrough with representative sources | `Draft` |
 
 ## Official foundations
 

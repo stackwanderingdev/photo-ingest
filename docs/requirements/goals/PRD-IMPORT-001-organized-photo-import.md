@@ -1,7 +1,7 @@
 # PRD-IMPORT-001 — Organized photo import
 
 - Status: `Draft`
-- Owner: `Product owner (name to be confirmed)`
+- Owner: `Daniel`
 - Priority: `Must`
 - Last updated: `2026-09-07`
 
@@ -21,8 +21,8 @@ approved through the linked requirements.
 ## Rationale and scope
 
 - Problem addressed: Manual transfer and organization are repetitive and can produce inconsistent library structure.
-- Included users/context: A personal user importing photos from a connected device on a local Linux system.
-- Exclusions: Photo editing, cloud synchronization, and non-Linux platforms.
+- Included users/context: A personal user importing photos from a filesystem, MTP, or network source on a local Linux system.
+- Exclusions: Photo editing, cloud synchronization, and support for non-Linux platforms in the initial product.
 
 ## Change history
 

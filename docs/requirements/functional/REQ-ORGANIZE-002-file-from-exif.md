@@ -3,12 +3,12 @@
 - Status: `Draft`
 - Priority: `Must`
 - Source/goal: `PRD-IMPORT-001`
-- Affected journey/UX rule: `To be defined after Q-001 and Q-003 are resolved`
+- Affected journey/UX rule: `UJ-001`, `UX-003`, `UX-006`, `UX-007`, `UX-010`
 
 ## Behavior
 
-When a photo is imported, the system must derive its destination directory from
-the photo's EXIF data according to an approved deterministic filing rule.
+When a photo is imported, the system must place it below a user-configurable
+destination root in the EXIF-derived directory structure `YYYY/MM/`.
 
 ## Acceptance examples
 
@@ -20,7 +20,7 @@ Then it is stored at the directory path derived from those values
 
 ## Edge and error cases
 
-- Exact directory pattern, timezone, missing metadata, invalid path values, and pre-existing directories remain `UNKNOWN` pending Q-003 and Q-005.
+- The authoritative EXIF field, timezone interpretation, missing metadata, invalid path values, and directory-creation behavior remain `UNKNOWN` pending Q-003 and Q-005.
 
 ## Verification
 

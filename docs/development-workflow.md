@@ -31,11 +31,11 @@ Assign people or accountable roles during project initialization:
 
 | Decision | Accountable role | May prepare/propose |
 |---|---|---|
-| Product goals and functional behavior | `<PRODUCT OWNER>` | Stakeholders, developers, agents |
-| UX rules and interaction contracts | `<UX/PRODUCT OWNER>` | Researchers, designers, agents |
-| Architecture, invariants, and ADRs | `<ARCHITECTURE OWNER>` | Developers, operators, agents |
-| Security risk acceptance | `<SECURITY/RISK OWNER>` | Security reviewers, developers, agents |
-| Task acceptance and completion | `<TASK OWNER>` | Implementers and reviewers |
+| Product goals and functional behavior | `Daniel` | Stakeholders, developers, agents |
+| UX rules and interaction contracts | `Daniel` | Researchers, designers, agents |
+| Architecture, invariants, and ADRs | `Daniel` | Developers, operators, agents |
+| Security risk acceptance | `Daniel` | Security reviewers, developers, agents |
+| Task acceptance and completion | `Daniel` | Implementers and reviewers |
 
 An AI agent may analyze, draft, and propose decisions. It must not mark a
 normative artifact `Accepted`, accept material risk, or resolve a documented
