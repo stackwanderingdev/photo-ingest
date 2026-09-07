@@ -7,9 +7,10 @@
 
 ## Behavior
 
-When the user requests an import preview for a selected source subdirectory and
-destination root, the system must show the planned destination path and outcome
-for each discovered photo without creating, changing, moving, or deleting files.
+When the user requests an import preview for a selected local or already mounted
+filesystem subdirectory and destination root, the system must show the planned
+destination path and outcome for each discovered photo without creating,
+changing, moving, or deleting files.
 
 ## Acceptance examples
 

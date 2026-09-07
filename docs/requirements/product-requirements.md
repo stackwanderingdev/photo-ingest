@@ -60,7 +60,7 @@ append goal definitions to this overview.
 | `Q-005` | How should duplicates, filename collisions, missing or malformed EXIF data, unsupported files, and interrupted imports be handled? | Product owner | Before requirement acceptance | `Open` |
 | `Q-006` | Which language/toolchain, project license, and initial version apply? | Daniel | 2026-09-07 | `Resolved: accepted foundation recorded in ADR-001; metadata library remains open pending format scope` |
 | `Q-007` | Which photo formats are supported, including HEIC/HEIF behavior, and which metadata library satisfies that scope? | Daniel | Before first task readiness | `Open` |
-| `Q-008` | Are network and MTP sources accessed only through operating-system mounts, through application-managed connections, or through a hybrid architecture? | Daniel | Before source architecture acceptance | `Open` |
+| `Q-008` | How are network and MTP sources integrated? | Daniel | 2026-09-07 | `Resolved by ADR-002: mounted network paths use filesystem access; MTP remains distinct and its technology requires a feasibility comparison` |
 
 ## Acceptance framework
 

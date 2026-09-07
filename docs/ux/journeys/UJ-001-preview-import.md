@@ -12,8 +12,8 @@
 
 | Step | User intent/action | System response | Visible status |
 |---|---|---|---|
-| 1 | Choose a source type and accessible source location. | Offer filesystem, MTP, and network sources supported by the current environment. | Selected source and access state |
-| 2 | Select a subdirectory within the source. | Validate access and retain the selected source scope. | Selected source path |
+| 1 | Choose an accessible local or already mounted filesystem location. | Provide filesystem selection without offering MTP or application-managed network connections in this increment. | Selected source and access state |
+| 2 | Select a subdirectory within the filesystem source. | Validate access and retain the selected source scope. | Selected source path |
 | 3 | Select the configurable destination root. | Validate whether the destination can be inspected. | Selected destination root |
 | 4 | Request a preview. | Discover photos, read required EXIF data, and derive planned paths without mutating files. | Progress where the total is known; otherwise current activity and cancellation |
 | 5 | Review the plan and problems. | Show each source, planned `YYYY/MM/YYYYMMDD_HHMMSS.ext` destination, and outcome classification. | Preview summary and item-level details |
@@ -40,5 +40,5 @@
 
 | ID | Question | Options | Decision criterion | Status |
 |---|---|---|---|---|
-| `UXQ-001` | How should filesystem, MTP, and network source selection be presented consistently? | Unified chooser; source-type selector with specialized chooser | Successful selection with clear permission and connection feedback | `Open` |
+| `UXQ-001` | How should future MTP selection coexist with filesystem selection? | Unified chooser; source-type selector with specialized chooser | Successful selection with clear capability, permission, and connection feedback | `Deferred until the MTP feasibility comparison` |
 | `UXQ-002` | Which preview columns and grouping are required for the first increment? | Minimal source/destination/status; extended EXIF details | Understandability without unnecessary complexity | `Open` |

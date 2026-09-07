@@ -14,3 +14,4 @@ including their context and consequences.
 | ADR | Title | Status | Date |
 |---|---|---|---|
 | [`ADR-001`](ADR-001-python-qt-project-foundation.md) | Python and Qt project foundation | `Accepted` | `2026-09-07` |
+| [`ADR-002`](ADR-002-source-access-boundaries.md) | Source access boundaries | `Accepted` | `2026-09-07` |

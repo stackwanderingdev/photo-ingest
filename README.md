@@ -17,7 +17,9 @@ local photo library.
 - Preview photo destinations without changing source or destination files.
 - Derive destination paths in the form `[configured root]/YYYY/MM/YYYYMMDD_HHMMSS.ext` from photo metadata.
 - Transfer and verify photos before deleting their source files.
-- Support filesystem, MTP, and network sources; their final integration architecture remains under review.
+- Support local and mounted network filesystems through filesystem access.
+- Add MTP as a distinct source with technology selected after a GIO/GVfs versus libmtp feasibility comparison.
+- Permit later direct network-source support only through a separate product and architecture decision.
 
 ## Requirements
 

@@ -7,8 +7,8 @@
 
 ## Behavior
 
-When the user initiates an import from a selected filesystem, MTP, or network
-source directory, the system must transfer the selected supported photos into
+When the user initiates an import from a selected supported source and its
+subdirectory, the system must transfer the selected supported photos into
 the configured local photo library, verify each destination file, delete its
 source only after successful verification, and report the outcome for every
 selected file.
@@ -16,7 +16,7 @@ selected file.
 ## Acceptance examples
 
 ```gherkin
-Given a selected filesystem, MTP, or network source directory containing photos
+Given a selected supported source and subdirectory containing photos
 And a configured local photo library
 When the user initiates an import
 Then each successfully imported photo exists in the local photo library
