@@ -8,7 +8,7 @@ interfaces, CLIs, APIs, and other human-system interfaces where relevant.
 - Status: `Accepted`
 - UX effort: `Minimal`
 - Owner: `Daniel`
-- Last reviewed: `2026-09-07`
+- Last reviewed: `2026-09-08`
 - Interface types: `Desktop`
 - Primary users: `USR-001 in user-research.md`
 - Critical journeys: `UJ-001`
@@ -116,6 +116,8 @@ equate measurement with user value.
 |---|---|---|---|---|
 | `UX-PROJ-001` | A preview must state clearly that it will not change source or destination files. | `USR-001` / `UJ-001` | GUI system test and owner walkthrough | `Accepted` |
 | `UX-PROJ-002` | Source selection must expose filesystem, MTP, and network locations and allow selecting a contained subdirectory. | `USR-001` / `UJ-001` | Owner walkthrough with representative sources | `Accepted` |
+| `UX-PROJ-003` | Preview items must visibly distinguish already imported content, a content duplicate within the current plan, a resolved name collision, a stale plan, and a blocking destination-path conflict; no state may be represented only by color. | `USR-001` / `UJ-001` | GUI system test and owner walkthrough | `Accepted` |
+| `UX-PROJ-004` | Successful verification must not imply automatic deletion. Deletion-eligible sources are presented together and require a separate explicit user action; the exact confirmation design is deferred under `Q-013`. | `USR-001` / future import-and-delete journey | Owner walkthrough before the mutating import increment | `Accepted` |
 
 ## Official foundations
 

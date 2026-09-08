@@ -26,7 +26,7 @@ Then it is stored at the directory path derived from those values
   final directory path and block import and deletion release under
   `INV-SAFETY-001`.
 - Invalid destination-root values and directory-creation behavior remain
-  `UNKNOWN` pending `Q-005`.
+  `UNKNOWN` under `Q-016`.
 
 ## Verification
 
@@ -38,3 +38,5 @@ Then it is stored at the directory path derived from those values
 - `2026-09-07`: Initial Draft derived from the stated project goal.
 - `2026-09-07`: Linked filing to the accepted normalized capture-time rules;
   destination-path operational rules remain open.
+- `2026-09-08`: Moved remaining destination-root and directory-creation policy
+  to the focused open question `Q-016`.

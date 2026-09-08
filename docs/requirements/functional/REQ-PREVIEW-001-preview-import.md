@@ -19,6 +19,8 @@ Given a selected source directory containing supported photos
 And a selected destination root
 When the user requests an import preview
 Then each discovered photo is shown with its planned destination path
+And already imported, within-plan duplicate, name-collision, stale-plan, and
+blocking destination-path-conflict outcomes are distinguishable
 And no source or destination file is created, changed, moved, or deleted
 ```
 
@@ -26,9 +28,18 @@ And no source or destination file is created, changed, moved, or deleted
 
 - Missing or invalid capture time and blocking capture-time conflicts must be
   visible as blocking per-file outcomes without a final destination path.
-- Duplicate destinations, inaccessible sources, unsupported files, and scan
-  errors must be visible in the preview; their exact classifications remain
-  `UNKNOWN` pending `Q-005`.
+- An existing byte-identical destination must be shown as `Already imported` or
+  an unambiguous equivalent, not silently skipped.
+- A byte-identical source in the same plan must be distinguishable as a
+  within-plan content duplicate while remaining a separate plan item.
+- A resolved regular-file name collision must show its suffixed destination and
+  a visible non-blocking collision status.
+- A non-regular object at the proposed target must show a blocking
+  destination-path conflict without being followed or inspected as file content.
+- A plan item invalidated after preview must be distinguishable as stale or
+  requiring replanning and must not receive a silently changed destination.
+- Inaccessible sources, unsupported files, and scan errors remain visible
+  per-file outcomes.
 
 ## Verification
 
@@ -39,3 +50,5 @@ And no source or destination file is created, changed, moved, or deleted
 
 - `2026-09-07`: Initial Draft created for the agreed non-mutating first increment.
 - `2026-09-07`: Defined preview behavior for unresolved capture times.
+- `2026-09-08`: Defined distinct duplicate, collision, stale-plan, and blocking
+  destination-object preview outcomes.

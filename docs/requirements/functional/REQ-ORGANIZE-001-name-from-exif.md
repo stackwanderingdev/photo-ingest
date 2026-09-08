@@ -25,8 +25,8 @@ Then its destination filename equals the name derived from those values
 
 - Missing or invalid capture time and blocking capture-time conflicts produce no
   final filename and block import and deletion release under `INV-SAFETY-001`.
-- Extension normalization and filename collisions remain `UNKNOWN` pending
-  `Q-005`.
+- Destination-name collisions follow `REQ-ORGANIZE-003`.
+- Extension normalization remains `UNKNOWN` under `Q-003`.
 
 ## Verification
 
@@ -38,3 +38,5 @@ Then its destination filename equals the name derived from those values
 - `2026-09-07`: Initial Draft derived from the stated project goal.
 - `2026-09-07`: Linked naming to the accepted normalized capture-time rules;
   collision and extension rules remain open.
+- `2026-09-08`: Linked accepted deterministic collision suffixing; extension
+  normalization remains open.

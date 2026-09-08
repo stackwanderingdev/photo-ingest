@@ -17,3 +17,4 @@ including their context and consequences.
 | [`ADR-002`](ADR-002-source-access-boundaries.md) | Source access boundaries | `Accepted` | `2026-09-07` |
 | [`ADR-003`](ADR-003-exiftool-metadata-backend.md) | ExifTool metadata backend | `Accepted` | `2026-09-07` |
 | [`ADR-004`](ADR-004-capture-time-adapter-contract.md) | Capture-time adapter contract | `Accepted` | `2026-09-07` |
+| [`ADR-005`](ADR-005-conclusive-content-verification.md) | Conclusive content verification boundary | `Accepted` | `2026-09-08` |
